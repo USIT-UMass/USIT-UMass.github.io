@@ -1,0 +1,276 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url(background.png);
+    background-repeat: round;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+nav {
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    height: 100px;
+    width: auto;
+}
+
+img.logo{
+    width: 100px;
+    height: auto;
+    vertical-align:middle;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+nav ul{
+    list-style-type: none;
+    text-align: justify;
+}
+nav ul:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+nav li{
+    display: inline;
+}
+
+nav a.link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.active {
+    background-color: #4392F1;
+    color: #fff;
+}
+
+article{
+    margin: 2% 2% 2% 2%;
+    background-color: #fff;
+    color: #000;
+    border: 5px solid #000;
+    font-family: 'Jura', sans-serif;
+    padding: 10px;
+    min-width: 20%;
+    height: 100%;
+    line-height: 1.5em;
+}
+
+article.about{
+    margin: 2% 2% 2% 2%;
+    background-color: #fff;
+    color: #000;
+    border: 5px solid #000;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    padding: 10px;
+    min-width: 20%;
+    height: 100%;
+    line-height: 1.5em;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+p.home{
+    padding: inherit;
+    width: 80%;
+    
+}
+
+
+h1{
+    text-align: left;
+    padding: inherit;
+}
+
+p.about{
+    text-align: left;
+    padding: 0px 10px;
+}
+
+a.button:link{
+    margin: 20px;
+    background-color: #0000FF;  
+    color: #fff;
+    border: 2px solid #000;
+    padding: 7px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px #999;
+}
+a.button:hover {
+    background-color: #6666FF;
+}
+
+a.button:active {
+    background-color: #0000FF;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+a.button:visited {
+    background-color: #0000FF;
+    color: #fff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+img.home{
+    width: 400px;
+    height: auto;
+    display: inline;
+    padding: 30px;
+    float: right;
+}
+
+
+/*ABOUT page*/
+
+.column {
+    float: left;
+    width: 23%;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    border: 1.5px solid #0000FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img.bio{
+    margin-top: 3px;
+    width: 108px;
+    height: auto;
+}
+
+.title {
+    color: grey;
+}
+p.email{
+    font-style: italic;
+}
+
+ button.contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+ button:hover {
+    background-color: #555;
+}
+
+h1.contact{
+    padding-bottom: 5px;
+}
+p.contact{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: inherit;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+p.event{
+    text-align: left;
+}
+
+h2.resource{
+    text-align: left;
+}
+ul.resource{
+    text-align: left;
+}
+
+.column-resource{
+    float: left;
+    width: 48%;
+    padding: 10px; 
+    margin: auto;
+}
+
+.row-resource:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column-resource {
+        width: 100%;
+    }
+}
+a.res:link{
+    color: #0000FF;
+}
+a.res:hover{
+    color: #00AAFF;
+}
+a.res:visited{
+    color: #0000FF;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+}
